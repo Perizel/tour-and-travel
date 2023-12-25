@@ -1,0 +1,410 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.Navbar{
+    display: flex;
+    align-items: center;
+    padding: 0.5rem 4%;
+    justify-content: space-between;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: #252535;
+}
+
+.Navbar .logo img{
+    width: 150px;
+}
+
+.Navbar .navigation a{
+    text-decoration: none;
+    color: #fff;
+    margin-right: 35px;
+    text-shadow: 2px 2px black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero{
+    background-image: url('../assets/bghero.jpg');
+    height: 660px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.hero .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.hero .heroText{
+    z-index: 50;
+}
+
+.hero h1{
+    color: #fff;
+    font-size: 60px;
+}
+
+.hero p{
+    font-size: 15px;
+    color: #fff;
+}
+
+.hero button{
+    background-color: #f9461d;
+    padding: 10px 20px;
+    border-radius: 30px;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    margin-top: 25px;
+    cursor: pointer;
+}
+
+.hero button:hover{
+    background-color: transparent;
+    border: 1px solid #f9461d;
+    transition: .5s;
+}
+
+/* Service Section */
+.Service{
+    padding-top: 30px;
+    background-color: #eceff0;
+    padding-bottom: 60px;
+}
+
+.Service .title h3{
+    font-size: 40px;
+    position: relative;
+    display: block;
+}
+
+
+.Service .title h3::before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    width: 230px;
+    background-color: #f9461d;
+}
+
+.Service .title p{
+    margin-top: 15px;
+}
+
+.serviceContent{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0rem 3%;
+    flex-wrap: wrap;
+    margin-top: 80px;
+    row-gap: 50px;
+}
+
+.serviceContent .card{
+    max-width: 350px;
+    background-color: #fff;
+    padding:40px;
+    position: relative;
+    cursor: pointer;
+}
+
+.serviceContent .card:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+.ServiceIcn{
+    position: absolute;
+    top: -30px;
+    left: 40%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 50%;
+    color: #f9461d;
+}
+
+.serviceContent .card p{
+    margin-top: 20px;
+}
+
+/* Choose Us section */
+
+.chooseUs{
+    padding: 30px 0;
+    background-image: url('../assets/bgservice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.chooseUs .title h3{
+    font-size: 45px;
+    position: relative;
+    color: #fff;
+}
+
+.chooseUs .title h3::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    height: 5px;
+    border-radius: 10px;
+    width: 330px;
+    background-color: #f9461d;
+}
+
+.chooseUs .title p{
+    margin-top: 30px;
+    color: #fff;
+    text-shadow: 2px 2px black;
+}
+
+.chooseContent{
+    display: flex;
+    margin-top: 60px;
+    padding: 0rem 3%;
+    justify-content: space-evenly;
+}
+
+.chooseContent .card{
+    background-color: #fff;
+    max-width: 350px;
+    padding: 30px;
+    position: relative;
+    cursor: pointer;
+}
+
+.chooseContent .card:hover{
+    transform: translateY(-10px);
+    transition: .5s;
+}
+
+
+.chooseContent .card h3{
+    margin-top: 10px;
+}
+
+.chooseContent .card p{
+    margin-top: 20px;
+}
+
+.chooseContent .ChooseIcn{
+    position: absolute;
+    top: -25px;
+    left: 45%;
+    background-color: #f9461d;
+    padding: 15px;
+    border-radius: 50%;
+    color: #fff;
+}
+
+
+/* Counter */
+.counterProject{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 50px;
+}
+
+.counterProject h3{
+    font-size: 30px;
+}
+
+/* Specials */
+.Specials{
+    padding-top: 50px;
+}
+
+.Specials h3{
+    font-size: 35px;
+    position: relative;
+}
+
+.Specials .title h3::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    height: 5px;
+    border-radius: 10px;
+    width: 280px;
+    background-color: #f9461d;
+}
+
+.Specials .title p{
+    margin-top: 15px;
+}
+
+.specialContent{
+    margin-top: 60px;
+    padding: 2rem 3%;
+}
+
+.specialContent .specialCard{
+    width: 400px;
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.specialContent .specialCard img{
+    width: 100%;
+}
+
+.specialContent .specialCard .specialsTeks{
+    position:absolute ;
+    background-color: #f9461d;
+    color: #fff;
+    padding: 0rem 25px;
+    bottom: -165px;
+    padding-bottom: 20px;
+    transition: .5s;
+}
+
+.specialContent .specialCard:hover .specialsTeks{
+    bottom: 0px;
+    transition: .5s;
+}
+
+.specialContent .specialCard .specialsTeks p{
+    font-weight: lighter;
+    margin-top: 5px;
+}
+
+.specialContent .specialCard .specialsTeks button{
+    background-color: #fff;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    margin-top: 5px;
+    font-weight: bold;
+}
+
+/* Top Deals */
+.Deals{
+    margin-top: 50px;
+    background-color: #eceff0;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.Deals h3{
+    font-size: 35px;
+    position: relative;
+}
+
+.Deals .title h3::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    height: 5px;
+    border-radius: 10px;
+    width: 180px;
+    background-color: #f9461d;
+}
+
+.Deals .title p{
+    margin-top: 20px;
+}
+
+.Deals .dealsContent{
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.Deals .dealsContent .images{
+    width: 400px;
+    position: relative;
+    transition: .5s;
+    cursor: pointer;
+}
+
+.Deals .dealsContent .images:hover .overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: .5s;
+}
+
+.Deals .dealsContent .images img{
+    width: 100%;
+}
+
+/* Gallery */
+.Gallery{
+    margin-top: 10px;
+    padding-top: 10px;
+    padding-bottom: 20px;
+}
+
+.Gallery h3{
+    font-size: 35px;
+    position: relative;
+}
+
+.Gallery .title h3::before{
+    content: '';
+    position: absolute;
+    bottom:-10px;
+    height: 5px;
+    border-radius: 10px;
+    width: 120px;
+    background-color: #f9461d;
+}
+
+.Gallery .title p{
+    margin-top: 20px;
+}
+
+.contentGallery{
+    margin-top: 40px;
+}
+
+.contentGallery .images{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.contentGallery .images .teks{
+    position: absolute;
+    bottom: 0;
+    width: 50%;
+    background-color: #eceff0;
+    padding: 50px;
+}
+
+.contentGallery .images .teks p{
+    margin-top: 20px;
+}
+
+.Footer{
+    background-color: #eceff0;
+    padding: 25px;
+}
